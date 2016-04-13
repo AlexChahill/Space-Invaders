@@ -1,10 +1,19 @@
 
-
+// pal
 void setup ()
 {
   size ( 500, 500);
+  
+  for (int x = 0; x < 14; x++) 
+{
+    for (int y = 0; y < 5; y++)
+    {
+      alienAlive[x][y] = true;
+    }
+  }
 }
 
+boolean [][] alienAlive = new boolean [14][5];
 
 
 void draw ()
@@ -56,8 +65,15 @@ void ship ()
 
 void alien ()
 {
-  float alienX = 230;
-  float alienY = 50;
+  //float alienX = 230;
+ // float alienY = 50;
+  
+  for ( int alienX = 5; alienX < 500; alienX += 45)
+  {
+    for (int alienY = 0; alienY < 5; alienY++)
+    {
+      if (alienAlive [alienX][alienY] == true)
+      {
   
   stroke (255);
   line (alienX, alienY, alienX +5, alienY - 2.5);
@@ -66,4 +82,13 @@ void alien ()
   line (alienX +20, alienY, alienX + 20, alienY + 5);
   line (alienX + 20, alienY + 5, alienX, alienY + 5);
   line (alienX, alienY + 5, alienX, alienY);
+  point (alienX + 5, alienY);
+  point (alienX + 15, alienY);
+  line (alienX + 5, alienY + 5, alienX +5, alienY + 7.5);
+  line (alienX +5, alienY + 7.5, alienX + 7.5, alienY + 10);
+  line (alienX + 15, alienY + 5, alienX + 15, alienY + 7.5);
+  line (alienX + 15, alienY + 7.5, alienX + 12.5, alienY + 10);
+  }
+    }
+  }
 }
