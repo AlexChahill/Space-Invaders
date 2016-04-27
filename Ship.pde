@@ -1,9 +1,10 @@
 class Ship extends GameObject
 {
 
-  
+
 Ship ()
 {
+
 }
   
   void drawShip()
@@ -17,33 +18,19 @@ Ship ()
   line (gunX, shipY, gunX + gunW, shipY);
   line (gunX, gunY, gunX, shipY);
   line (gunX + gunW, gunY, gunX + gunW, shipY);
-  }
   
+  }
+
+
+ 
   void update()
   {
-  if (keyPressed) 
-  {
-    if (key == 'a')
-    {
-      shipX --;
-    }
-
-    if (key == 'd')
-    {
-      shipX ++;
-    }
-
-    if (key == ' ')
-    {
-      float bulletY = 0;
       float bulletStart = gunY;
-
-      line (gunMid, bulletStart, gunMid, bulletY);
-    }
+      line (gunMid, gunY, gunMid, bulletY);   
   }
   }
   
   
 
-}
+
 

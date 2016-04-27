@@ -5,17 +5,65 @@ void setup ()
   alien = new Alien();
   gameObject = new GameObject();
 }
-
+boolean keys0;
+boolean keys1;
 
 Ship ship;
 Alien alien;
 GameObject gameObject;
+   void Movement()
+  {
+     if(keys0 == true)
+  {
+    ship.shipX --;
+  }
+  
+  if(keys1 == true)
+  
+ {
+   ship.shipX ++;
+ }
+  }
+   void keyPressed()
+  {
+      if (key == 'a')
+    {
+      keys0 = true;
+    }
 
+    if (key == 'd')
+    {
+      keys1 = true;
+    }
+  }
+    void keyReleased()
+  {
+        if (key == 'a')
+    {
+      keys0 = false;
+    }
+
+    if (key == 'd')
+    {
+       keys1 = false;
+    }
+  }
+ 
+  
+ 
+    
+  
 void draw ()
 {
   background (0);
   alien.drawAlien ();
   ship.drawShip();
+  Movement();
+ 
+  
+
+ 
+  
 }
 
 //void alien ()
