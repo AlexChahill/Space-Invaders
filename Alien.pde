@@ -1,4 +1,4 @@
-class Alien
+class Alien extends GameObject
 {
   
   Alien ()

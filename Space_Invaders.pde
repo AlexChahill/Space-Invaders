@@ -3,11 +3,13 @@ void setup ()
   size ( 500, 500);
   ship = new Ship();
   alien = new Alien();
+  gameObject = new GameObject();
 }
 
 
 Ship ship;
 Alien alien;
+GameObject gameObject;
 
 void draw ()
 {
