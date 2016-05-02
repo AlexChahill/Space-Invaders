@@ -14,23 +14,21 @@ Ship ()
   line (shipX - 5, shipH, shipX +5 + shipW, shipH);
   line (shipX, shipY, shipX - 5, shipH);
   line (shipX + shipW, shipY, shipX +5 + shipW, shipH);
-  line (gunX, gunY, gunX + gunW, gunY);
-  line (gunX, shipY, gunX + gunW, shipY);
-  line (gunX, gunY, gunX, shipY);
-  line (gunX + gunW, gunY, gunX + gunW, shipY);
+  line (shipX + shipW * 0.5f - gunW * 0.5f, gunY, shipX + shipW * 0.5f - gunW * 0.5f + gunW, gunY);
+  line (shipX + shipW * 0.5f - gunW * 0.5f, shipY, shipX + shipW * 0.5f - gunW * 0.5f + gunW, shipY);
+  line (shipX + shipW * 0.5f - gunW * 0.5f, gunY, shipX + shipW * 0.5f - gunW * 0.5f, shipY);
+  line (shipX + shipW * 0.5f - gunW * 0.5f + gunW, gunY, shipX + shipW * 0.5f - gunW * 0.5f + gunW, shipY);
   
   }
 
 
  
   void update()
+{
+  if (key == ' ')
   {
-      float bulletStart = gunY;
-      line (gunMid, gunY, gunMid, bulletY);   
-  }
+   line( gunMid, gunY, gunMid, 0); 
   }
   
-  
-
-
-
+}
+}

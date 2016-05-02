@@ -4,13 +4,25 @@ void setup ()
   ship = new Ship();
   alien = new Alien();
   gameObject = new GameObject();
+  //userInterface = new UserInterface();
+
+      for ( int alienX = 0; alienX < 12; alienX ++)
+    {
+      for ( int alienY = 0; alienY <5; alienY ++)
+      {
+        alienHit[alienX][alienY] = true;
+      }
+}
 }
 boolean keys0;
 boolean keys1;
+boolean [][] alienHit = new boolean [12][5];
 
 Ship ship;
 Alien alien;
 GameObject gameObject;
+
+
    void Movement()
   {
      if(keys0 == true)
@@ -58,6 +70,8 @@ void draw ()
   background (0);
   alien.drawAlien ();
   ship.drawShip();
+  ship.update();
+  alien.update();
   Movement();
  
   
@@ -138,7 +152,3 @@ void ship ()
 //    }
 //  }
 }
-    
-    
-    
-

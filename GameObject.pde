@@ -12,5 +12,9 @@ class GameObject
   float gunY = shipY - gunH;
   float gunMid = gunX + 2.25;
   float bulletY = 0;
+  int frame = 60;
+  float alienX = 15;
+  float alienY = 50;
+  boolean [][] alienHit = new boolean [12][5];
 }
 
