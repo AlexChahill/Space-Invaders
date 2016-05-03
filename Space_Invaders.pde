@@ -4,7 +4,7 @@ void setup ()
   ship = new Ship();
   alien = new Alien();
   gameObject = new GameObject();
-  //userInterface = new UserInterface();
+  userInterface = new UserInterface();
 
       for ( int alienX = 0; alienX < 12; alienX ++)
     {
@@ -13,27 +13,33 @@ void setup ()
         alienHit[alienX][alienY] = true;
       }
 }
+
+    //PFont mono;
+    //mono = loadFont("VectorBattle-48.vlw", 32);
+    //textFont(mono);
 }
 boolean keys0;
 boolean keys1;
 boolean [][] alienHit = new boolean [12][5];
 
+
 Ship ship;
 Alien alien;
 GameObject gameObject;
+UserInterface userInterface;
 
 
    void Movement()
   {
      if(keys0 == true)
   {
-    ship.shipX --;
+    ship.shipX -= 2;
   }
   
   if(keys1 == true)
   
  {
-   ship.shipX ++;
+   ship.shipX += 2;
  }
   }
    void keyPressed()
@@ -47,6 +53,7 @@ GameObject gameObject;
     {
       keys1 = true;
     }
+
   }
     void keyReleased()
   {
@@ -59,25 +66,23 @@ GameObject gameObject;
     {
        keys1 = false;
     }
-  }
- 
+  }  
   
  
     
   
 void draw ()
 {
-  background (0);
+   background (0);
   alien.drawAlien ();
   ship.drawShip();
   ship.update();
   alien.update();
   Movement();
+  userInterface.drawUI();
  
-  
 
- 
-  
+
 }
 
 //void alien ()

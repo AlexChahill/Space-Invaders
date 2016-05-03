@@ -33,16 +33,15 @@ class Alien extends GameObject
   {
     if (frameCount % frame == 0)
     {
-      alienY ++;
-      alienX += random (-10.0f, 10.0f);
-      frame --;
-      if (frame == 0)
-      {
-        frame = 60;
-      }
+      //alienY ++;
+      //alienX += random (-10.0f, 10.0f);
+      //frame --;
+      //if (frame == 0)
+      //{
+      //  frame = 60;
+      //}
     }
 
   alienY ++;
   }
 }
-

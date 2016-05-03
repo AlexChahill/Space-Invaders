@@ -22,13 +22,23 @@ Ship ()
   }
 
 
+
  
   void update()
 {
-  if (key == ' ')
+  if (keyPressed)
   {
-   line( gunMid, gunY, gunMid, 0); 
+        if (key == ' ')
+  {
+   line( shipX + shipW * 0.5f - gunW * 0.5f, gunY, shipX + shipW * 0.5f - gunW * 0.5f, 0); 
   }
+}
+}
+     
+   
+
   
 }
-}
+  
+
+
