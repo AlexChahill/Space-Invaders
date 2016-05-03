@@ -10,8 +10,7 @@ class Alien extends GameObject
     for ( int alienX = 15; alienX <= 490; alienX += 40)
     {
       for ( int alienY = 50; alienY <= 240; alienY += 40)
-      {
-
+        {
         stroke (255);
         line (alienX, alienY, alienX +5, alienY - 2.5);
         line (alienX +5, alienY - 2.5, alienX + 15, alienY - 2.5);
@@ -25,9 +24,10 @@ class Alien extends GameObject
         line (alienX +5, alienY + 7.5, alienX + 7.5, alienY + 10);
         line (alienX + 15, alienY + 5, alienX + 15, alienY + 7.5);
         line (alienX + 15, alienY + 7.5, alienX + 12.5, alienY + 10);
+        }
       }
     }
-  }
+  
 
   void update ()
   {
@@ -41,7 +41,9 @@ class Alien extends GameObject
       //  frame = 60;
       //}
     }
-
-  alienY ++;
   }
-}
+  }
+
+
+
+
