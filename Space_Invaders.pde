@@ -14,9 +14,6 @@ void setup ()
       }
 }
 
-    //PFont mono;
-    //mono = loadFont("VectorBattle-48.vlw", 32);
-    //textFont(mono);
 }
 boolean keys0;
 boolean keys1;
