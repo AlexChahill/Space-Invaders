@@ -13,6 +13,7 @@ class Alien extends GameObject
           if (alienHit [x][y] == false
           )
           {
+            // Alien not hit
           alienX = 43 * x + 2;
           alienY = 50 * y + 50;
         stroke (255);
@@ -29,6 +30,13 @@ class Alien extends GameObject
         line (alienX + 15, alienY + 5, alienX + 15, alienY + 7.5);
         line (alienX + 15, alienY + 7.5, alienX + 12.5, alienY + 10);
           }
+          
+          //Alien is hit
+//          if (  == alienX, alienY)
+//          {
+//            alienHit [x][y] == true
+//            scorecount += 1;
+//          }
         }
       }
     }

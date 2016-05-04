@@ -29,7 +29,10 @@ Ship ()
   {
         if (key == ' ')
   {
-   line( shipX + shipW * 0.5f - gunW * 0.5f + 2.25, gunY, shipX + shipW * 0.5f - gunW * 0.5f + 2.25, 0); 
+    ellipse (shipX + shipW * 0.5f - gunW * 0.5f + 2.25, bulletY, 4, 4);
+    bulletY -= 10;
+   //line( shipX + shipW * 0.5f - gunW * 0.5f + 2.25, gunY, shipX + shipW * 0.5f - gunW * 0.5f + 2.25, 0);
+   //line( gunX, gunY -3, gunX, gunY - 15);
   }
 }
 }  

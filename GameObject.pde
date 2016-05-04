@@ -11,7 +11,7 @@ class GameObject
   float gunX = shipX + shipW * 0.5f - gunW * 0.5f;
   float gunY = shipY - gunH;
   float gunMid = gunX + 2.25;
-  float bulletY = 0;
+  float bulletY = shipY - gunH;
   int frame = 60;
   float alienX = 15;
   float alienY = 50;
