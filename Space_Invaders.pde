@@ -18,6 +18,7 @@ void setup ()
 boolean keys0;
 boolean keys1;
 boolean [][] alienHit = new boolean [12][5];
+boolean ball = false;
 
 
 Ship ship;

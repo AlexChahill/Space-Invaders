@@ -10,8 +10,7 @@ class Alien extends GameObject
     {
       for ( int y = 0; y <5; y ++)
         {
-          if (alienHit [x][y] == false
-          )
+          if (alienHit [x][y] == false)
           {
             // Alien not hit
           alienX = 43 * x + 2;
@@ -30,16 +29,17 @@ class Alien extends GameObject
         line (alienX + 15, alienY + 5, alienX + 15, alienY + 7.5);
         line (alienX + 15, alienY + 7.5, alienX + 12.5, alienY + 10);
           }
-          
+        }
+    }
           //Alien is hit
-//          if (  == alienX, alienY)
+//          if (shipX +hipW * 0.5f - gunW * 0.5f + 2.25, bulletY == alienX, alienY)
 //          {
 //            alienHit [x][y] == true
 //            scorecount += 1;
 //          }
         }
-      }
-    }
+      
+    
   
 
   void update ()
@@ -56,6 +56,7 @@ class Alien extends GameObject
     }
   }
   }
+
 
 
 
