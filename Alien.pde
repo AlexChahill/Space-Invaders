@@ -7,7 +7,7 @@ class Alien extends GameObject
   void drawAlien ()
   {
 
-    for ( int alienX = 15; alienX <= 490; alienX += 40)
+ for ( int alienX = 15; alienX <= 490; alienX += 40)
     {
       for ( int alienY = 50; alienY <= 240; alienY += 40)
         {

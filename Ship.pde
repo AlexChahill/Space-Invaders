@@ -18,7 +18,6 @@ Ship ()
   line (shipX + shipW * 0.5f - gunW * 0.5f, shipY, shipX + shipW * 0.5f - gunW * 0.5f + gunW, shipY);
   line (shipX + shipW * 0.5f - gunW * 0.5f, gunY, shipX + shipW * 0.5f - gunW * 0.5f, shipY);
   line (shipX + shipW * 0.5f - gunW * 0.5f + gunW, gunY, shipX + shipW * 0.5f - gunW * 0.5f + gunW, shipY);
-  
   }
 
 
@@ -33,11 +32,7 @@ Ship ()
    line( shipX + shipW * 0.5f - gunW * 0.5f + 2.25, gunY, shipX + shipW * 0.5f - gunW * 0.5f + 2.25, 0); 
   }
 }
-}
-     
-   
-
-  
+}  
 }
   
 

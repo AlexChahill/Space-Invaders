@@ -16,6 +16,6 @@ class GameObject
   float alienX = 15;
   float alienY = 50;
   boolean [][] alienHit = new boolean [12][5];
-      PFont font;
+  PFont font;
 }
 
