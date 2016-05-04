@@ -6,11 +6,15 @@ class Alien extends GameObject
   }
   void drawAlien ()
   {
-
- for ( int alienX = 15; alienX <= 490; alienX += 40)
+      for ( int x = 0; x < 12; x ++)
     {
-      for ( int alienY = 50; alienY <= 240; alienY += 40)
+      for ( int y = 0; y <5; y ++)
         {
+          if (alienHit [x][y] == false
+          )
+          {
+          alienX = 43 * x + 2;
+          alienY = 50 * y + 50;
         stroke (255);
         line (alienX, alienY, alienX +5, alienY - 2.5);
         line (alienX +5, alienY - 2.5, alienX + 15, alienY - 2.5);
@@ -24,6 +28,7 @@ class Alien extends GameObject
         line (alienX +5, alienY + 7.5, alienX + 7.5, alienY + 10);
         line (alienX + 15, alienY + 5, alienX + 15, alienY + 7.5);
         line (alienX + 15, alienY + 7.5, alienX + 12.5, alienY + 10);
+          }
         }
       }
     }
@@ -33,13 +38,13 @@ class Alien extends GameObject
   {
     if (frameCount % frame == 0)
     {
-      //alienY ++;
-      //alienX += random (-10.0f, 10.0f);
-      //frame --;
-      //if (frame == 0)
-      //{
-      //  frame = 60;
-      //}
+      alienY ++;
+      alienX += random (-10.0f, 10.0f);
+      frame --;
+      if (frame == 0)
+      {
+        frame = 60;
+      }
     }
   }
   }
