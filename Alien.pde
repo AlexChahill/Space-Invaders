@@ -32,7 +32,7 @@ class Alien extends GameObject
       }
     }
     //Alien is hit
-//    if (shipX +hipW * 0.5f - gunW * 0.5f + 2.25, bulletY && alienHit[x][y])
+//    if (alienX, bulletY && alienHit[x][y])
 //    {
 //      alienHit [x][y] == true
 //      scorecount += 1;

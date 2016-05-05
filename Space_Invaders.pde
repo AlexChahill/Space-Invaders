@@ -13,12 +13,20 @@ void setup ()
       alienHit[alienX][alienY] = true;
     }
   }
+  minim = new Minim (this);
+  song = minim.loadFile ("BattleLoop.mp3");
+  song.play();
+  song.loop();
 }
 boolean keys0;
 boolean keys1;
 boolean [][] alienHit = new boolean [12][5];
 boolean ball = false;
 boolean click = false;
+import ddf.minim.*;
+Minim minim;
+AudioPlayer song;
+
 
 
 Ship ship;
