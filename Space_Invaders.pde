@@ -15,6 +15,7 @@ void setup ()
   }
   minim = new Minim (this);
   song = minim.loadFile ("BattleLoop.mp3");
+  shoot = minim.loadFile ("shootnoise.aiff");
   song.play();
   song.loop();
 }
@@ -26,6 +27,7 @@ boolean click = false;
 import ddf.minim.*;
 Minim minim;
 AudioPlayer song;
+AudioPlayer shoot;
 
 
 
